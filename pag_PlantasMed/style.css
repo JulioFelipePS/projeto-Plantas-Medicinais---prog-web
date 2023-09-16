@@ -1,0 +1,229 @@
+/* Estilos CSS para os elementos SVG */
+.elemento-svg {
+    width: 400px;
+    height: 400px;
+    cursor:pointer;
+}
+
+.mesma-cor {
+    transition: fill 0.3s; /* Adicione uma transição suave para a mudança de cor */
+}
+
+   /* Estilos para a tabela */
+   .table-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+  /* Estilos para a imagem no card */
+  .card-img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 200px;
+    width: 200 px;
+    padding: 5px;  
+  }
+
+  /* Estilos para o conteúdo do card */
+  .card-content {
+    padding: 10px;
+    margin-right: 30px;
+    background-color: #2F5B00;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+
+
+
+body{
+    background-image: radial-gradient(circle at 50% -3.03%,
+     #f8de4b 0, #eac743 25%, #d9af3b 50%, #c79834 75%, #b5832f 100%);
+    
+}
+
+
+
+header {
+    border-bottom: 1px solid #eac743;
+    padding: 20px;
+    background: #D9AF3C;
+}
+
+
+@keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 100px 0px;
+    }
+  }
+  
+  .botao {
+    display: inline-block;
+    padding: 10px 10px; /* Espaçamento interno para o botão */
+    margin-right: 20px; /* Espaçamento à direita entre os botões */
+    margin-left: 20px;
+    border: none;
+    background-color: #A1C038; /* Cor de fundo do botão */
+    color: #2F5B00; /* Cor do texto do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+}
+
+.botao-card {
+    display: inline-block;
+    padding: 10px 50px; /* Espaçamento interno para o botão */
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: #A1C038; /* Cor de fundo do botão */
+    color: #2F5B00; /* Cor do texto do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+    text-align: center;
+    
+}
+
+.botao-home {
+    padding: 7px 100px; /* Espaçamento interno para o botão */
+    margin-top: 20px;
+    border: thin, #284002;
+    background-color: transparent; /* Cor de fundo do botão */
+    color: #284002; /* Cor do texto do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Transforma o cursor em uma mão ao passar o mouse */
+    transition: background-color 0.3s, color 0.3s; /* Efeito de transição suave */
+    text-align: centers;
+    font-size: small;
+    font-weight: bold;
+    display: block;
+    width: 300px; /* Largura do botão fora dos cards */
+    margin: 0 auto; 
+}
+
+
+
+/* Estilos de hover para o botão */
+.botao:hover {
+    background-color: #2F5B00; /* Cor de fundo do botão no hover */
+    color: #A1C038; /* Cor do texto do botão no hover */
+}
+
+.botao-card:hover {
+    background-color: #2F5B00; /* Cor de fundo do botão no hover */
+    color: #A1C038; /* Cor do texto do botão no hover */
+}
+
+.botao-home:hover {
+    background-color: #284002; /* Cor de fundo do botão no hover */
+    color: #eac743;
+}
+
+/* Estilos para o modal */
+.modal {
+    text-align: center;
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 20%);
+    z-index: 1;
+    max-width: 70%;
+    max-height: 60%;
+    overflow-y: auto;
+    scroll-padding-block-start: inherit;
+    scrollbar-width: auto; /* Largura da barra de rolagem */
+    scrollbar-color: #007BFF #fff; /* Cor da alça da barra de rolagem e do fundo da barra de rolagem */
+
+    /* Estilos para navegadores WebKit (Chrome e Safari) */
+    &::-webkit-scrollbar {
+        width: 8px; /* Largura da barra de rolagem */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: green; /* Cor da alça da barra de rolagem */
+        border-radius: 5px; /* Borda arredondada da alça da barra de rolagem */
+    }
+    
+}
+
+.modal-content {
+    width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+ /* Estilos para o botão de fechar (X) */
+ .close-modal {
+    position: absolute;
+    right: 32px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 32px;
+    background-color: transparent;
+    color: #284002;
+    cursor: pointer;
+
+}
+
+.close-modal:hover {
+    
+    color: #eac743;
+}
+
+/* Estilo para um parágrafo com tema de plantas */
+.texto-home {
+    font-size: 1em; /* Tamanho da fonte grande */
+    color: #284002; /* Outra cor verde para variedade */
+    text-align: justify; /* Justificar o texto */
+    line-height: 1.5; /* Espaçamento entre linhas aumentado para facilitar a leitura */
+    word-spacing: 2px;
+    
+  }
+
+  .titulo-home{
+    color: #284002; /* Outra cor verde para variedade */
+    line-height: 1.5; /* Espaçamento entre linhas aumentado para facilitar a leitura */
+    word-spacing: 2px;
+    font-size: 1.5em; /* Tamanho da fonte grande */
+    font-weight: bold;
+    text-align: center; /* Alinhar ao centro */
+    margin-bottom: 20px; /* Espaço na parte inferior */
+    }
+
+    .titulo{
+        color: #284002; /* Outra cor verde para variedade */
+        line-height: 1.5; /* Espaçamento entre linhas aumentado para facilitar a leitura */
+        word-spacing: 2px;
+        font-size: 4em; /* Tamanho da fonte grande */
+        font-weight: bold;
+        text-align: center; /* Alinhar ao centro */
+        margin-bottom: 20px; /* Espaço na parte inferior */
+        }
+
+    .titulocard{
+        color: #0f1801; /* Outra cor verde para variedade */
+        line-height: 1.5; /* Espaçamento entre linhas aumentado para facilitar a leitura */
+        word-spacing: 2px;
+        font-size: 2em; /* Tamanho da fonte grande */
+        text-align: center; /* Alinhar ao centro */
+        margin-bottom: 20px; /* Espaço na parte inferior */
+    }
